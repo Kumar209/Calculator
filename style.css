@@ -1,22 +1,33 @@
-body {
-    text-align: center;
-    height: 100%;
-    width: 100%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("bg.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+* {
     margin: 0;
     padding: 0;
-}
-
-* {
-    /* margin: 0;
-    padding: 0; */
-    /* background-color: #ecf0f3; uncomment this when u remove background image for better view */
     box-sizing: border-box;
     font-family: sans-serif;
     outline: none;
 }
+
+body {
+    text-align: center; 
+    background-color: #ecf0f3;
+}
+
+@media only screen and (min-width: 800px) {
+    body {
+        height: 100%;
+        width: 100%;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("bg.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    h1{
+        color: white;
+    }
+    
+    p{
+        color: white;
+    }
+  }
 
 .container {
     height: 90vh;
@@ -28,12 +39,11 @@ body {
 }
 
 h1{
-    color: white;
+    padding-top: 1%;
 }
 
 p{
     font-size: 17px;
-    color: white;
 }
 
 
